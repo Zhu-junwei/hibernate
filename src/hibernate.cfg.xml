@@ -18,7 +18,7 @@
 		<property name="hibernate.show_sql">true</property>
 		<property name="hibernate.format_sql">true</property>
 		<!-- 没有表则自动创建 -->
-		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.hbm2ddl.auto">update</property> <!-- create、update -->
 		
 		<!-- 设置事务隔离级别 -->
 		<property name="hibernate.connection.isolation">4</property>
@@ -26,8 +26,16 @@
 		<!-- 设置当前线程绑定的Session -->
 		<property name="hibernate.current_session_context_class">thread</property>
 		
+		
 		<!-- 映射文件路径 -->
-		<mapping resource="com/zhujunwei/domain/Customer.hbm.xml"/>
+		<!-- <mapping resource="com/zhujunwei/domain/Customer.hbm.xml"/> -->
+		
+		<!-- <mapping resource="com/zhujunwei/domain2/Department.hbm.xml"/>
+		<mapping resource="com/zhujunwei/domain2/Employee.hbm.xml"/> -->
+		
+		<mapping resource="com/zhujunwei/domain3/Student.hbm.xml"/>
+		<mapping resource="com/zhujunwei/domain3/Course.hbm.xml"/>
+		
 		
 	</session-factory>
 </hibernate-configuration>
