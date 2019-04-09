@@ -36,6 +36,9 @@
 		<mapping resource="com/zhujunwei/domain3/Student.hbm.xml"/>
 		<mapping resource="com/zhujunwei/domain3/Course.hbm.xml"/>
 		
+		<mapping resource="com/zhujunwei/domain4/Customer.hbm.xml"/>
+		<mapping resource="com/zhujunwei/domain4/LinkMan.hbm.xml"/>
+		
 		
 	</session-factory>
 </hibernate-configuration>
